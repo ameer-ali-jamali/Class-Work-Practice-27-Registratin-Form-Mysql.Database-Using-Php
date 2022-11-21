@@ -117,7 +117,7 @@ include_once "code.php";
                         $("#signup").click();
                     });
                 } else {
-                    window.location = "success.html";
+                    window.location = "index.php";
                 }
 
             } else {
@@ -127,17 +127,15 @@ include_once "code.php";
         }
 
         function login() {
-            let name = document.getElementById("name").value;
             let email = document.getElementById("email").value;
             let pass = document.getElementById("pass").value;
-            let re_pass = document.getElementById("re_pass").value;
-            if (name && email && pass && re_pass != "" && pass == re_pass) {
+            if (email && pass != "") {
                 if (confirm("Please Confirm For Registration !!") == true) {
                     $(document).ready(function() {
-                        $("#signup").click();
+                        $("#sigin").click();
                     });
                 } else {
-                    window.location = "success.html";
+                    window.location = "index.php";
                 }
 
             } else {
@@ -150,14 +148,13 @@ include_once "code.php";
             let name = document.getElementById("name").value;
             let email = document.getElementById("email").value;
             let pass = document.getElementById("pass").value;
-            let re_pass = document.getElementById("re_pass").value;
-            if (name && email && pass && re_pass != "" && pass == re_pass) {
+            if (name && email && pass != "") {
                 if (confirm("Please Confirm For Registration !!") == true) {
                     $(document).ready(function() {
-                        $("#signup").click();
+                        $("#update").click();
                     });
                 } else {
-                    window.location = "success.html";
+                    window.location = "index.php";
                 }
 
             } else {
@@ -167,17 +164,15 @@ include_once "code.php";
         }
 
         function delete_() {
-            let name = document.getElementById("name").value;
             let email = document.getElementById("email").value;
             let pass = document.getElementById("pass").value;
-            let re_pass = document.getElementById("re_pass").value;
-            if (name && email && pass && re_pass != "" && pass == re_pass) {
+            if (email && pass != "") {
                 if (confirm("Please Confirm For Registration !!") == true) {
                     $(document).ready(function() {
-                        $("#signup").click();
+                        $("#delete").click();
                     });
                 } else {
-                    window.location = "success.html";
+                    window.location = "index.php";
                 }
 
             } else {
