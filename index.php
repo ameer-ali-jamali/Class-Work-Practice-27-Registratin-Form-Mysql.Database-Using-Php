@@ -51,7 +51,7 @@ include_once "code.php";
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                                <input type="password"  name="re_pass" id="re_pass" placeholder="Repeat your password" />
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
@@ -89,13 +89,6 @@ include_once "code.php";
 
 
 
-
-
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
     <script>
@@ -118,7 +111,7 @@ include_once "code.php";
                         $("#signup").click();
                     });
                 } else {
-                    window.location = "success.html";
+                    window.location = "index.php";
                 }
             } else if (pass != re_pass || re_pass != pass) {
                 alert('Password Dosent Match => !!');

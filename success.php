@@ -1,3 +1,7 @@
+<?php
+include_once "conn.php";
+include_once "code.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
