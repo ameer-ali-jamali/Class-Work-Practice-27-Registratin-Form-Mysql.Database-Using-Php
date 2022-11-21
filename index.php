@@ -65,6 +65,11 @@ include_once "code.php";
                                     <a href="#" onclick="login()" class="btn btn-success p-2">Login</a>
                                     <a href="#" onclick="update()" class="btn btn-secondary p-2">Update</a>
                                     <a href="#" onclick="delete_()" class="btn btn-danger p-2">Delete</a>
+
+                                    <input type="submit" name="submit" id="signup" class="btn btn-primary p-2" value="Register" />
+                                    <input type="submit" name="login" id="signin" class="btn btn-success p-2" value="login" />
+                                    <input type="submit" name="update" id="update" class="btn btn-secondary p-2" value="Update" />
+                                    <input type="submit" name="delete" id="delete" class="btn btn-danger p-2" value="Delete" />
                                 </div>
                             </div>
                         </form>
@@ -80,10 +85,6 @@ include_once "code.php";
         </div>
     </div>
 
-    <input type="submit" name="submit" id="signup" class="btn btn-primary p-2" value="Register" />
-    <input type="submit" name="login" id="signin" class="btn btn-success p-2" value="login" />
-    <input type="submit" name="update" id="update" class="btn btn-secondary p-2" value="Update" />
-    <input type="submit" name="delete" id="delete" class="btn btn-danger p-2" value="Delete" />
 
 
 
@@ -112,19 +113,20 @@ include_once "code.php";
             let pass = document.getElementById("pass").value;
             let re_pass = document.getElementById("re_pass").value;
             if (name && email && pass && re_pass != "" && pass == re_pass) {
-                if (confirm("Please Confirm For Registration !!") == true) {
+                if (confirm(" Please Confirm For Registration !! ") == true) {
                     $(document).ready(function() {
                         $("#signup").click();
                     });
                 } else {
-                    window.location = "index.php";
+                    window.location = "success.html";
                 }
-
+            } else if (pass != re_pass || re_pass != pass) {
+                alert('Password Dosent Match => !!');
             } else {
                 alert('Please Fill Registration Form => !!');
             }
-
         }
+
 
         function login() {
             let email = document.getElementById("email").value;
@@ -132,7 +134,7 @@ include_once "code.php";
             if (email && pass != "") {
                 if (confirm("Please Confirm For Registration !!") == true) {
                     $(document).ready(function() {
-                        $("#sigin").click();
+                        $("#signin").click();
                     });
                 } else {
                     window.location = "index.php";
