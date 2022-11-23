@@ -33,8 +33,14 @@
         echo "<td>$data[password]</td>";
         echo '<td> <form method="post">
     <input type="hidden" name="id" value=' . $data['id'] . '>
-    <input type="submit" name="submit" id="delete_">
-    <input  type="submit" class="btn btn-sm btn-danger" onclick="id()" value="DELETE">
+    <input type="submit" name="update_by_id" id="update_by_id">
+    <input  type="submit" class="btn btn-sm btn-info" onclick="confirm_update()" value="Update">
+    </form>
+    </td>';
+        echo '<td> <form method="post">
+    <input type="hidden" name="id" value=' . $data['id'] . '>
+    <input type="submit" name="delete_by_id" id="delete_by_id">
+    <input  type="submit" class="btn btn-sm btn-danger" onclick="confirm_delete()" value="DELETE">
     </form>
     </td>';
         echo "</tr>";
@@ -44,37 +50,6 @@
     echo "</div>";
     ?>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-    </script>
-    <script>
-        $("#delete_").hide();
-    </script>
-    <script>
-        function id() {
-            // var conf = confirm('Are you sure you would like to delete this ?');
-            alert("hello");
-
-            if (conf == true) {
-                // $("#delete").click();
-                alert("hello");
-            } else {
-                // window.location = "index.php";
-                alert("else");
-            }
-
-        }
-
-
-        function confirmDelete() {
-            deletePrompt = confirm('Are you sure you would like to delete this?');
-            if (deletePrompt) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    </script>
 </body>
 
 </html>

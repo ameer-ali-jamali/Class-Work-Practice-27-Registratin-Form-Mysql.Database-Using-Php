@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./scss/layouts/main.scss">
     <!-- Bootstrap Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/boostarp_min.js"></script>
 </head>
+
 
 <?php
 include_once "conn.php";
@@ -86,98 +85,9 @@ include_once "code.php";
     </div>
 
 
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("#signup").hide();
-            $("#signin").hide();
-            $("#update").hide();
-            $("#delete").hide();
-        });
-    </script>
-    <script>
-        function submit() {
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let pass = document.getElementById("pass").value;
-            let re_pass = document.getElementById("re_pass").value;
-            if (name && email && pass && re_pass != "" && pass == re_pass) {
-                if (confirm(" Please Confirm For Registration !! ") == true) {
-                    $(document).ready(function() {
-                        $("#signup").click();
-                    });
-                } else {
-                    window.location = "index.php";
-                }
-            } else if (pass != re_pass || re_pass != pass) {
-                alert('Password Dosent Match => !!');
-            } else {
-                alert('Please Fill Registration Form => !!');
-            }
-        }
-
-
-        function login() {
-            let email = document.getElementById("email").value;
-            let pass = document.getElementById("pass").value;
-            if (email && pass != "") {
-                if (confirm("Please Confirm For Registration !!") == true) {
-                    $(document).ready(function() {
-                        $("#signin").click();
-                    });
-                } else {
-                    window.location = "index.php";
-                }
-
-            } else {
-                alert('Please Fill Registration Form => !!');
-            }
-
-        }
-
-        function update() {
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let pass = document.getElementById("pass").value;
-            if (name && email && pass != "") {
-                if (confirm("Please Confirm For Registration !!") == true) {
-                    $(document).ready(function() {
-                        $("#update").click();
-                    });
-                } else {
-                    window.location = "index.php";
-                }
-
-            } else {
-                alert('Please Fill Registration Form => !!');
-            }
-
-        }
-
-        function delete_() {
-            let email = document.getElementById("email").value;
-            let pass = document.getElementById("pass").value;
-            if (email && pass != "") {
-                if (confirm("Please Confirm For Registration !!") == true) {
-                    $(document).ready(function() {
-                        $("#delete").click();
-                    });
-                } else {
-                    window.location = "index.php";
-                }
-
-            } else {
-                alert('Please Fill Registration Form => !!');
-            }
-
-        }
-    </script>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Jquery -->
+    <script src="js/jquery_min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
