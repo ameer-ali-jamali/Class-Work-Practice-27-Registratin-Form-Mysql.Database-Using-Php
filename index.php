@@ -51,7 +51,7 @@ include_once "code.php";
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password"  name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />

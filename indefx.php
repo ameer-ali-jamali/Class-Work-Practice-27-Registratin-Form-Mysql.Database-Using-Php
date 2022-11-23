@@ -2,6 +2,7 @@
 include_once "conn.php";
 include_once "code.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +22,16 @@ include_once "code.php";
 </head>
 
 <body>
-    <h1>Wellcome</h1>
+    <?php
+    if (isset($_POST['submit'])) {
+        $_POST['email'];
+        $sql = "SELECT * FROM `tab` WHERE email='$email'";
+        $query = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($query);
+    }
+    echo  "<h1>$row[name]</h1>";
+    ?>
+
 </body>
 
 </html>

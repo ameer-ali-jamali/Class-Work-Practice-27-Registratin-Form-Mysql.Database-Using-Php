@@ -59,7 +59,7 @@ if (isset($_POST['login'])) {
         if ($row == true) {
             die("<script>
                 alert(' Wellcome =>  $row[name] ');
-                window.location = 'success.php';
+                window.location = 'indefx.php';
                 </script>");
         } else {
             echo "<script>
@@ -139,6 +139,43 @@ if (isset($_POST['delete'])) {
     </script>");
     }
 }
+
+// if (isset($_POST['delte-by-id'])) {
+//     echo "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
+//         </script>";
+//     echo '<script>
+//             $("delte-by-id").click(function() {
+//          $("#confirm-popup").click();            
+//         });
+//         </script>';
+// }
+// $confirm_popup = $_POST['confirm-popup'];
+// if ($confirm_popup == true) {
+//     echo "hello";
+//     echo "hello";
+//     }
+// }
+// // if ($n == true) {
+//     $sql = "DELETE FROM tab WHERE id = {$_POST['id']}";
+//     $result = mysqli_query($conn, $sql);
+//     if ($result == true) {
+//         die("<script>
+//     alert('Deleted Succesfully');
+//     window.location = 'index.php';
+//     </script>");
+//     } else {
+//         die("<script>
+//     alert('Error');
+//     window.location = 'index.php';
+//     </script>");
+//     }
+// } else {
+//     die("<script>
+//     alert('Post Value Is Empty');
+//     window.location = 'index.php';
+//     </script>");
+// }
+// }
 
 
 
