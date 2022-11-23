@@ -3,8 +3,9 @@ $(document).ready(function () {
     $("#signin").hide();
     $("#update").hide();
     $("#delete").hide();
-    $("#delete_by_id").hide();
-    $("#update_by_id").hide();
+    // $("#edit_by_id").hide();
+    // $("#update_by_id").hide();
+    // $("#delete_by_id").hide();
 });
 
 function submit() {
