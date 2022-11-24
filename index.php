@@ -67,10 +67,14 @@ include_once "code.php";
                                     <a href="#" onclick="update()" class="btn btn-secondary p-2">Update</a>
                                     <a href="#" onclick="delete_()" class="btn btn-danger p-2">Delete</a>
 
-                                    <input type="submit" name="submit" id="signup" class="btn btn-primary p-2" value="Register" />
-                                    <input type="submit" name="login" id="signin" class="btn btn-success p-2" value="login" />
-                                    <input type="submit" name="update" id="update" class="btn btn-secondary p-2" value="Update" />
-                                    <input type="submit" name="delete" id="delete" class="btn btn-danger p-2" value="Delete" />
+                                    <input type="submit" name="submit" id="signup" class="btn btn-primary p-2"
+                                        value="Register" />
+                                    <input type="submit" name="login" id="signin" class="btn btn-success p-2"
+                                        value="login" />
+                                    <input type="submit" name="update" id="update" class="btn btn-secondary p-2"
+                                        value="Update" />
+                                    <input type="submit" name="delete" id="delete" class="btn btn-danger p-2"
+                                        value="Delete" />
                                 </div>
                             </div>
                         </form>

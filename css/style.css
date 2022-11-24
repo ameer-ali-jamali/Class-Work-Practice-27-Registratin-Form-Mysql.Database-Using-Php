@@ -285,7 +285,7 @@ body {
 .table-heading {
   font-size: revert;
   text-align: center;
-  margin-top: 30px;
+
 }
 
 .display-flex {
@@ -330,7 +330,6 @@ body {
 }
 
 .signup-content {
-  padding: 20px 0;
   width: 100%;
   display: grid;
   place-items: center;
@@ -784,7 +783,7 @@ label.valid:after {
   }
 }
 
-@media screen and (min-width:770px) and (max-width:1200px) {
+@media screen and (min-width:1040px) and (max-width:1200px) {
   .col-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -804,7 +803,7 @@ label.valid:after {
   }
 }
 
-@media screen and (min-width:10px) and (max-width:770px) {
+@media screen and (max-width:1040px) {
   .col-6 {
     flex: 0 0 auto;
     width: 100% !important;

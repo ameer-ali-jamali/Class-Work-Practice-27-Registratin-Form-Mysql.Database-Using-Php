@@ -90,16 +90,7 @@ function confirm_delete() {
             $("#delete_by_id").click();
         });
     } else {
-        window.location = "index.php";
-    }
-
-}
-function confirm_update() {
-    if (confirm("R You Sure You Want To Update ? ") == true) {
-        $(document).ready(function () {
-            $("#update_by_id").click();
-        });
-    } else {
+        $("#id").val("");
         window.location = "index.php";
     }
 

@@ -141,7 +141,8 @@ if (isset($_POST['delete'])) {
 }
 
 if (isset($_POST['delete_by_id'])) {
-    if ($_POST['delete_by_id'] != null) {
+    $id = $_POST['id'];
+    if ($id == true) {
         $sql = "DELETE FROM tab WHERE id = {$_POST['id']}";
         $result = mysqli_query($conn, $sql);
         if ($result == true) {
@@ -157,25 +158,8 @@ if (isset($_POST['delete_by_id'])) {
         }
     } else {
         die("<script>
-    // window.location = 'index.php';
-    aler('hiiiii');
-    </script>");
-    }
-}
-
-if (isset($_POST['update_by_id'])) {
-    $sql = "DELETE FROM tab WHERE id = {$_POST['id']}";
-    $result = mysqli_query($conn, $sql);
-    if ($result == true) {
-        die("<script>
-    alert('Deleted Succesfully');
-    window.location = 'index.php';
-    </script>");
-    } else {
-        die("<script>
-    alert('Error');
-    window.location = 'index.php';
-    </script>");
+        window.location = 'index.php';
+        </script>");
     }
 }
 
