@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./scss/layouts/main.scss">
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/boostarp_min.js"></script>
+    <!-- Jqery -->
+    <script src="js/jquery_min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
 
@@ -30,7 +32,7 @@ include_once "code.php";
         <div class="row">
             <div class="col-6">
                 <!-- Sign up form -->
-                <div class="signup-content center-form">
+                <div class="signup-content ">
                     <div class="signup-form">
                         <h2 class="form-title text-align">Sign up</h2>
                         <form action="index.php" method="post" class="register-form" id="register-form">
@@ -86,9 +88,7 @@ include_once "code.php";
 
 
 
-    <!-- Jquery -->
-    <script src="js/jquery_min.js"></script>
-    <script src="js/app.js"></script>
+
 </body>
 
 </html>
