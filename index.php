@@ -26,8 +26,6 @@ include_once "code.php";
 
 <body>
 
-
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-6">

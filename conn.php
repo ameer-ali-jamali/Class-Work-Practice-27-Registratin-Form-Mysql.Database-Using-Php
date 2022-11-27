@@ -6,5 +6,3 @@ try {
     die("Connection failed");
 }
 ?>
-<?php
-?>
