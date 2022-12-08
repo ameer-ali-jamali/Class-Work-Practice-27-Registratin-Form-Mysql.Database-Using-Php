@@ -40,12 +40,12 @@ CREATE TABLE `tab` (
 --
 
 INSERT INTO `tab` (`id`, `name`, `email`, `password`, `re_password`) VALUES
-(16, 'Ameer_ali', 'jamaliameer1@gmail.com', '0cc175b9c0f1b6a831c399e269772661', '0cc175b9c0f1b6a831c399e269772661'),
-(17, 'A-1-Uniforms', 'email@j.com', '03c7c0ace395d80182db07ae2c30f034', '03c7c0ace395d80182db07ae2c30f034'),
-(18, 'Emma Collins', 'lkjkjk@f.com', '8277e0910d750195b448797616e091ad', '8277e0910d750195b448797616e091ad'),
-(19, 'Junaid', 'khanhmdkhn13@gmail.com', '8fa14cdd754f91cc6554c9e71929cce7', '8fa14cdd754f91cc6554c9e71929cce7'),
-(20, 'Akram', 'k@j.com', 'b2f5ff47436671b6e533d8dc3614845d', 'b2f5ff47436671b6e533d8dc3614845d'),
-(21, 'Anwar', 'puvicusu@kellychibale-researchgroup-uct.com', '2510c39011c5be704182423e3a695e91', '2510c39011c5be704182423e3a695e91');
+(1,'Ameer_ali', 'jamaliameer1@gmail.com', 'ameer', 'ameer'),
+(2,'A-1-Uniforms', 'email@j.com', 'a-1', 'a-1'),
+(3,'Emma Collins', 'lkjkjk@f.com', 'emma', 'emma'),
+(4,'Junaid', 'khanhmdkhn13@gmail.com', 'junaid', 'junaid'),
+(5,'Akram', 'k@j.com', 'akram', 'akram'),
+(6,'Anwar', 'puvicusu@kellychibale-researchgroup-uct.com', 'a', 'a');
 
 --
 -- Indexes for dumped tables
@@ -66,7 +66,7 @@ ALTER TABLE `tab`
 -- AUTO_INCREMENT for table `tab`
 --
 ALTER TABLE `tab`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
