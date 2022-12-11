@@ -1,2 +1,3 @@
-# Send form data into database
-I created one registration form but in this form so many mistake i have to solve this in a new repostry
+# Send user data into database
+I created one registration form which will send data into database This form works Great ..
+But i need improvements so i have to make other one with some improvements...
